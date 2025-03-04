@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Which is More Funny</title>
+<style>
+      body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#0056b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: pink;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px black;
+    width: 600px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+
+
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#feedback {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.display {
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+.display #findOutput {
+    font-size: 1.5rem;
+    color: #555;
+}
+  
+
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Guess which video was rated the funniest</h1> 
+        <p>Which video was rated number 1 out of the five videos shown to you?</p> 
+    </div>
+    <div class="filter-group">
+        <label>Options</label> 
+        <ul id="options">
+            <li><input type="radio" name="video" value="1"> <a href="https://youtube.com/shorts/63IX34q4Us0?si=18tNB5fvNxM9Xdbx">Video 1</a></li>
+            <li><input type="radio" name="video" value="2"> <a href="https://youtube.com/shorts/Po098TRdOn4?si=-htNp8M4HXTcmfU8">Video 2</a></li>
+            <li><input type="radio" name="video" value="3"> <a href="https://youtube.com/shorts/kRmEfyKSefs?si=2GpnLislgPkud65T">Video 3</a></li>
+            <li><input type="radio" name="video" value="4"> <a href="https://youtube.com/shorts/swQRnW561BA?si=hCWgMxieJ4m1HpWw">Video 4</a></li>
+            <li><input type="radio" name="video" value="5"> <a href="https://youtube.com/shorts/nAgumQK9VtM?si=fvxS2M-mo29Ja0H8">Video 5</a></li>
+        </ul>
+    </div>
+    <div class="game">
+        <button onclick="checkGuess()">Submit Guess</button>
+    </div>
+    <p id="feedback"></p>
+    <button onclick="resetGame()">Play Again</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
